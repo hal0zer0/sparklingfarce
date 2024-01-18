@@ -9,8 +9,9 @@ extends Node2D
 
 # It may contain the Turn Manager as well, not sure.  
 
-@onready var tyler = $"../Tyler"
+#@onready var tyler : Tyler = $"../Tyler"
 
+@export var tyler : Tyler
 @export var battle_name = "Default"
 
 # Called when the node enters the scene tree for the first time.

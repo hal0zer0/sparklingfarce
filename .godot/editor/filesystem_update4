@@ -1,0 +1,7 @@
+res://Scenes/TestScene1.tscn
+res://Common/BattleManager.gd
+res://Common/Tyler.gd
+res://Common/BattleManager.tscn
+res://Common/Tyler.tscn
+res://Scenes/TestChar1.gd
+res://Scenes/TestChar1.tscn
