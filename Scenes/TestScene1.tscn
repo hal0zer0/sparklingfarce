@@ -1,0 +1,19 @@
+[gd_scene load_steps=5 format=3 uid="uid://qkn22ad8sktw"]
+
+[ext_resource type="PackedScene" uid="uid://53ysrsul2rfo" path="res://Common/Tyler.tscn" id="1_khkcp"]
+[ext_resource type="Script" path="res://Scenes/TestScene1.gd" id="1_ymx67"]
+[ext_resource type="PackedScene" uid="uid://bprptjhbbafc" path="res://Scenes/TestChar1.tscn" id="2_cndyt"]
+[ext_resource type="PackedScene" uid="uid://jh8yj0nacm61" path="res://Common/BattleManager.tscn" id="4_fn3q0"]
+
+[node name="TestScene1" type="Node2D"]
+script = ExtResource("1_ymx67")
+
+[node name="Tyler" parent="." instance=ExtResource("1_khkcp")]
+position = Vector2(155, 127)
+
+[node name="CharacterBody2D" parent="." instance=ExtResource("2_cndyt")]
+position = Vector2(65, 88)
+
+[node name="BattleManager" parent="." instance=ExtResource("4_fn3q0")]
+position = Vector2(77, 155)
+battle_name = "TestScene1"
