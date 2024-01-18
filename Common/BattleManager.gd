@@ -17,8 +17,13 @@ extends Node2D
 func _ready():
 	print("Battle Manager Starting")
 	print("Battle name: " + battle_name)
-	tyler.init()
-	pass # Replace with function body.
+	# Battle Manager will collect all the relevant data from battle definitions
+	# and such, create the resulting scene, and will be the main brain behind 
+	# the state of a battle
+	tyler.init()  # Tyler is the tile map manager.  Methods that interact
+	# with the tilemap such as movement and range calculations should
+	# be methods of Tyler, not tilemap directly.  
+	
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
