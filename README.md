@@ -1,0 +1,1 @@
+Core with test art
